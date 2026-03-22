@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -16,10 +18,10 @@ android {
         versionName = "1.0"
 
         // Read token from local.properties (never committed to git)
-        val localProps = java.util.Properties()
         val localPropsFile = rootProject.file("local.properties")
-        if (localPropsFile.exists()) localProps.load(localPropsFile.inputStream())
-        buildConfigField("String", "OPENCLAW_API_TOKEN", "\"${localProps.getProperty("openclaw.api.token", "")}\"")
+        val props = Properties()
+        if (localPropsFile.exists()) props.load(localPropsFile.inputStream())
+        buildConfigField("String", "OPENCLAW_API_TOKEN", "\"${props.getProperty("OPENCLAW_API_TOKEN", "")}\"")
     }
 
     buildFeatures {
