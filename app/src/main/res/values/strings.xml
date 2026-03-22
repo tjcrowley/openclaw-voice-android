@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OpenClaw Voice</string>
+    <string name="listening">Listening…</string>
+    <string name="thinking">Thinking…</string>
+    <string name="speaking">Speaking…</string>
+    <string name="permission_title">Microphone Required</string>
+    <string name="permission_message">OpenClaw Voice needs microphone access to hear you. Grant permission to continue.</string>
+    <string name="permission_grant">Grant</string>
+    <string name="error_no_connection">Cannot reach assistant, check your connection</string>
+    <string name="enrollment_title">Voice Enrollment</string>
+    <string name="enrollment_say_name">Say your name</string>
+    <string name="enrollment_phrase_prompt">Say phrase %1$d of 3</string>
+    <string name="enrollment_recording">Recording…</string>
+    <string name="enrollment_done">Enrolled!</string>
+    <string name="add_new_voice">Add new voice</string>
+    <string name="delete_speaker">Delete %1$s</string>
+    <string name="cancel">Cancel</string>
+</resources>
